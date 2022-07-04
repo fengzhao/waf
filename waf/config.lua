@@ -1,11 +1,12 @@
---WAF config file,enable = "on",disable = "off"
 
---waf status
+-- WAF总开关，enable = "on",disable = "off"
 config_waf_enable = "on"
---log dir
+-- log dir
 config_log_dir = "/tmp"
---rule setting
+--WAF规则路径
 config_rule_dir = "/usr/local/openresty/nginx/conf/waf/rule-config"
+
+
 --enable/disable white url
 config_white_url_check = "on"
 --enable/disable white ip
@@ -30,6 +31,7 @@ config_post_check = "on"
 config_waf_output = "html"
 --if config_waf_output ,setting url
 config_waf_redirect_url = "https://www.unixhot.com"
+
 config_output_html=[[
 <html>
 <head>
